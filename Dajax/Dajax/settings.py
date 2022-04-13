@@ -40,6 +40,8 @@ INSTALLED_APPS = [
     'Djcrudfun',
     'Djcrudclass',
     'student',
+    'rest_framework'
+    
 ]
 
 MIDDLEWARE = [

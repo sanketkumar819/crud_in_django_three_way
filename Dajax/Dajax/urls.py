@@ -1,9 +1,10 @@
 from django.contrib import admin
 from django.urls import path, include
-from Djcrudfun import urls
-from Djcrudclass import urls
-from student import urls
+from Djcrudfun import views
+from Djcrudclass import views
+from student import views
 from . import views
+
 
 
 urlpatterns = [
@@ -12,6 +13,7 @@ urlpatterns = [
     path('fbv/',include('Djcrudfun.urls')),
     path('cbv/',include('Djcrudclass.urls')),
     path('ajax/',include('student.urls')),
+    path('api/', include('student.api.urls')),
     
     
 ]
